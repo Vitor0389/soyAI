@@ -1,4 +1,4 @@
-train: C:\Área de Trabalho\ProjetoYOLO\dataset\images\train #MUDAR PATH
-val: C:\Área de Trabalho\ProjetoYOLO\dataset\images\val #MUDAR PATH
+train: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\train #MUDAR PATH 
+val: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\val #MUDAR PATH
 nc: 3 
-names: ["Healthy", "Caterpillar", "Diabrotica speciosa"]
+names: ["Caterpillar", "Diabrotica speciosa", "Healthy"]
