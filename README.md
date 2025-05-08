@@ -24,7 +24,7 @@ O modelo é treinado para identificar **três classes**:
 
 2. **Instale as ultralytics:**
 
-  pip install ultralytics
+    pip install ultralytics
 
 🧠 Treinamento do Modelo
 Para iniciar o treinamento, execute:
@@ -33,9 +33,10 @@ Para iniciar o treinamento, execute:
 
 ✅ Você pode trocar o modelo para yolov8m.pt, yolov8l.pt ou yolov8x.pt dependendo da potência do seu computador.
 
-⚡ 2. Predição rápida via linha de comando
-  Você também pode realizar a predição diretamente pelo terminal executando:
+⚡ 1. Predição rápida via linha de comando
 
+  Você também pode realizar a predição diretamente pelo terminal executando:
+  
   yolo predict model=runs\detect\yolov8_soja_diseases\weights\best.pt source="IMG_PATH"
 
 Status:
