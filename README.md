@@ -27,17 +27,18 @@ O modelo é treinado para identificar **três classes**:
     pip install ultralytics
 
 🧠 Treinamento do Modelo
+
 Para iniciar o treinamento, execute:
 
   yolo detect train model=yolov8n.pt data=dataset/dataset.yaml epochs=50 imgsz=640
 
 ✅ Você pode trocar o modelo para yolov8m.pt, yolov8l.pt ou yolov8x.pt dependendo da potência do seu computador.
 
-⚡ 1. Predição rápida via linha de comando
+⚡ Predição rápida via linha de comando
 
-  Você também pode realizar a predição diretamente pelo terminal executando:
+    Você também pode realizar a predição diretamente pelo terminal executando:
   
-  yolo predict model=runs\detect\yolov8_soja_diseases\weights\best.pt source="IMG_PATH"
+    yolo predict model=runs\detect\yolov8_soja_diseases\weights\best.pt source="IMG_PATH"
 
 Status:
 
