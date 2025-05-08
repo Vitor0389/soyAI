@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 
-dataset_yaml = "dataset/dataset.yaml" #MUDAR PATH
+dataset_yaml = "C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\dataset.yaml" 
 
 
 model = YOLO("yolov8n.yaml")
@@ -20,7 +20,7 @@ metrics = model.val()
 print(metrics)
 
 
-img_path = "dataset/images/val/sojaTest" #MUDAR PATH
+img_path = "C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\Test\imgtest.jpg"  
 results = model(img_path)
 results.show()
 results.save("resultados/")

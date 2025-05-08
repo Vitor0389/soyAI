@@ -1,4 +1,4 @@
-train: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\train #MUDAR PATH 
-val: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\val #MUDAR PATH
+train: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\train  
+val: C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\images\val 
 nc: 3 
 names: ["Caterpillar", "Diabrotica speciosa", "Healthy"]
