@@ -1,12 +1,13 @@
 from ultralytics import YOLO
 
+# Use barras normais (/) para os caminhos de arquivo
+dataset_yaml = "C:/Users/muril/OneDrive/Área de Trabalho/soyAI/dataset/dataset.yaml" 
 
-dataset_yaml = "C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\dataset.yaml" 
+# Use 'yolov8n.pt' para carregar pesos pré-treinados (transfer learning).
+# Isso resulta em um treinamento muito mais rápido e com maior precisão.
+model = YOLO("yolov8n.pt") 
 
-
-model = YOLO("yolov8n.yaml")
-
-
+# Treina o modelo
 model.train(
     data=dataset_yaml,
     epochs=50,
@@ -16,14 +17,15 @@ model.train(
     name="yolov8_soja_diseases"
 )
 
-metrics = model.val()
+# Valida o modelo treinado
+metrics = model.val() 
 print(metrics)
 
-
-img_path = "C:\Users\muril\OneDrive\Área de Trabalho\soyAI\dataset\Test\imgtest.jpg"  
-results = model(img_path)
-results.show()
+# Corrija o caminho da imagem de teste
+img_path = "C:/Users/muril/OneDrive/Área de Trabalho/soyAI/dataset/Test/imgtest.jpg"  
+results = model(img_path) 
+results.show() 
 results.save("resultados/")
 
-
+# Exporta o modelo final
 model.export(format="onnx", path="resultados/modelo_final.onnx")
