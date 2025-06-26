@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Use barras normais (/) para os caminhos de arquivo
-dataset_yaml = "C:/Users/muril/OneDrive/Área de Trabalho/soyAI/dataset/dataset.yaml" 
+dataset_yaml = "PATH/dataset.yaml" 
 
 # Use 'yolov8n.pt' para carregar pesos pré-treinados (transfer learning).
 # Isso resulta em um treinamento muito mais rápido e com maior precisão.
@@ -22,7 +22,7 @@ metrics = model.val()
 print(metrics)
 
 # Corrija o caminho da imagem de teste
-img_path = "C:/Users/muril/OneDrive/Área de Trabalho/soyAI/dataset/Test/imgtest.jpg"  
+img_path = "IMG_Path"  
 results = model(img_path) 
 results.show() 
 results.save("resultados/")
